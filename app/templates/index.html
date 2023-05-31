@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Chilli disease detection</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+
+  </head>
+  <body>
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <a class="py-2" href="#Home" aria-label="Product">
+       <img src="{{ url_for('static', filename='images/orbit_logo.jpg') }}" alt="Orbit Logo"
+                  width="50" height="50" align="left">
+    </a>
+      <a class="py-2 d-none d-md-inline-block fs-5 text-decoration-none" href="#App">App</a>
+    <a class="py-2 d-none d-md-inline-block fs-5 text-decoration-none" href="#Informasi">Information</a>
+    <a class="py-2 d-none d-md-inline-block fs-5 text-decoration-none" href="#Members">Members</a>
+  </nav>
+</header>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light " style="background-image: url({{ url_for('static', filename='/images/background.JPG') }});
+            background-repeat:no-repeat;  background-size: 100% 100%;" id="Home">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal" style="color: whitesmoke">Chilli Disease Detection</h1>
+      <p class="lead fw-normal" style="color: whitesmoke">The Chilli Disease Detection is an innovative and user-friendly tool designed to assist farmers, agricultural experts, and enthusiasts
+in accuratelydiagnosing diseases affecting chilli plants. With the aim ofearlydetection and effective management, this web app leverages cutting-edge technologies to analyze images ofchilli plants and provide disease identification.</p>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" style="height: 450px" id="App">
+    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden d-flex justify-content-center align-items-center">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Try our app</h2>
+        <p class="lead">Just upload a picture of your chili plant, our app will let you know the health condition of your plant.</p>
+          <a class="btn btn-outline-light"  id="start-button">Start</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="Informasi" style="height: 450px">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden d-flex justify-content-center align-items-center">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Detect many Chili disease</h2>
+        <p class="lead">Like Whitefly, Leaf curl, Yellowish, Leaf Spot</p>
+      </div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden d-flex justify-content-center align-items-center">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Backed with computer vision technology</h2>
+        <p class="lead">Our app is backed with computer vision technology using .... Model</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="Members">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Members</h2>
+          <br>
+          <br>
+          <div class="row slideanim">
+            <div class="col-sm-4">
+               <span class="glyphicon glyphicon-user logo-small"></span>
+               <h4 class="display-6">Naufal Aammar Hibatullah</h4>
+               <p class="display-7">Universitas Terbuka</p>
+            </div>
+            <div class="col-sm-4">
+               <span class="glyphicon glyphicon-user logo-small"></span>
+              <h4 class="display-6">Giselle Halim</h4>
+               <p class="display-7">Institut Teknologi dan Bisnis Kalbis</p>
+            </div>
+            <div class="col-sm-4">
+               <span class="glyphicon glyphicon-user logo-small"></span>
+               <h4 class="display-6">Rizki Ramadhan</h4>
+               <p class="display-7">Universitas Muhammadiyah Prof. DR. HAMKA</p>
+            </div>
+         </div>
+         <br>
+            <br>
+            <br>
+            <br>
+         <div class="row slideanim">
+            <div class="col-sm-6">
+               <span class="glyphicon glyphicon-user logo-small"></span>
+              <h4 class="display-6">Risfandi Makmur</h4>
+               <p class="display-7">Universitas Terbuka Makassar</p>
+            </div>
+            <div class="col-sm-6">
+               <span class="glyphicon glyphicon-user logo-small"></span>
+              <h4 class="display-6">Irene Ferbina Barus</h4>
+               <p class="display-7">Universitas Kristen Indonesia</p>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="modal fade" id="upload-image-modal" tabindex="-1" aria-labelledby="upload-image-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="upload-image-modal-label">Upload Image</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <form action="/predict" method="post" enctype="multipart/form-data" id="upload-gambar">
+                        <input type="file" name="image" class="form-control">
+                         <br>
+                        <button type="submit" class="btn btn-primary">Predict</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal fade" id="result-popup" tabindex="-1" aria-labelledby="result-popup-label" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="result-popup-label">Result</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Your plant is Healthy</h4>
+                        <p>Congratulations your chilli is healthy.</p>
+                     </div>
+                     <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading">Your plant is unhealthy</h4>
+                        <p>Information for your plant disease is below.</p>
+                        <ul>
+                           <li><strong>Disease name:</strong> <span id="disease"></span></li>
+                           <li><strong>Description:</strong> <span id="descriptionDisease"></span></li>
+                           <li><strong>How to deal:</strong> <span id="tips"></span></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script>
+         $(document).ready(function() {
+           $("#start-button").on("click", function() {
+             $("#upload-image-modal").modal("show");
+           });
+
+           $("#upload-image-modal").on("submit", function(event) {
+             event.preventDefault();
+
+             var formData = new FormData(document.getElementById("upload-gambar"));
+
+             $.ajax({
+               url: "http://localhost:5000/api/deteksi",
+               type: "post",
+               data: formData,
+               processData: false,
+               contentType: false,
+               success: function(response) {
+                   console.log(response);
+                 if (response.disease == "healthy") {
+                   $("#result-popup").modal("show");
+                   $("#result-popup .alert-danger").hide();
+                   $("#result-popup .alert-success").show();
+                 } else {
+                   $("#result-popup").modal("show");
+                   $("#result-popup .alert-success").hide();
+                   $("#result-popup .alert-danger").show();
+                   document.getElementById("disease").textContent = response.disease;
+                   document.getElementById("descriptionDisease").textContent = response.descriptionDisease;
+                   document.getElementById("tips").textContent = response.tips;
+                 }
+               },
+               error: function(error) {
+                 console.log(error);
+               }
+             });
+           });
+         });
+      </script>
+  </body>
+</html>
